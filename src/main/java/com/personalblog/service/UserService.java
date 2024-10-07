@@ -16,11 +16,11 @@ public class UserService {
         userRepository.save(user);
     }
 
-    Optional<User> getUserById(Long id) {
+    public Optional<User> getUserById(Long id) {
         return userRepository.findById(id);
     }
 
-    Optional<User> getByUsername(String username) {
+    public Optional<User> getByUsername(String username) {
         return userRepository.findByUsername(username);
     }
 }
